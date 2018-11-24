@@ -1,4 +1,4 @@
-package io.github.coroutine
+package io.github.coroutine.basic
 
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay

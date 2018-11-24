@@ -1,15 +1,15 @@
-package io.github.coroutine
+package io.github.coroutine.basic
 
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-suspend fun main() {
-    val job = GlobalScope.launch {
+fun main() {
+    GlobalScope.launch {
         delay(1000L)
         println("World!")
     }
 
     println("Hello, ")
-    job.join()
+    Thread.sleep(2000L)
 }
